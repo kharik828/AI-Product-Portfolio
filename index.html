@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Product Portfolio</title>
+    <meta
+      name="description"
+      content="Public portfolio for AI and agentic product work by Hari Kharik."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Hari Kharik</p>
+          <h1>AI products built with agentic workflows, eval discipline, and fast iteration.</h1>
+          <p class="lede">
+            This portfolio tracks the products I am building outside work, how I use Lovable and Codex as complementary agents,
+            and how those systems turn ideas into testable product bets.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="https://github.com/kharik828/AI-Product-Portfolio" target="_blank" rel="noreferrer">GitHub Repo</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <p class="panel-label">Operating model</p>
+          <ul class="signal-list">
+            <li>Problem-first product design</li>
+            <li>Lovable for rapid UI and flow iteration</li>
+            <li>Codex for repo shaping, code quality, and integration work</li>
+            <li>Agentic architecture with human review gates</li>
+            <li>Human evals first, automated evals next</li>
+          </ul>
+        </aside>
+      </header>
+
+      <main>
+        <section class="section" id="projects">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Current portfolio</h2>
+            <p>Each project page captures the problem, architecture direction, tradeoffs, evals, and learning loop.</p>
+          </div>
+          <div class="card-grid" id="project-grid"></div>
+        </section>
+
+        <section class="section split-section">
+          <div>
+            <p class="eyebrow">Agent Stack</p>
+            <h2>How I am using agents to build</h2>
+          </div>
+          <div class="workflow-grid">
+            <article class="workflow-card">
+              <h3>Lovable</h3>
+              <p>Used where velocity matters most: interface exploration, interaction flow shaping, and fast product framing.</p>
+            </article>
+            <article class="workflow-card">
+              <h3>Codex</h3>
+              <p>Used for repository cleanup, implementation, debugging, integration logic, and turning rough prototypes into maintainable systems.</p>
+            </article>
+            <article class="workflow-card">
+              <h3>Human Review</h3>
+              <p>Used to define acceptance criteria, spot quality gaps, and keep outputs grounded in actual user value.</p>
+            </article>
+            <article class="workflow-card">
+              <h3>Evals</h3>
+              <p>Started with human evaluation on relevance, correctness, and usefulness. The goal is to turn those rubrics into repeatable test coverage.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Snippets</p>
+            <h2>Reusable patterns</h2>
+            <p>Small building blocks that show how I think about agentic systems, RAG, and eval-driven shipping.</p>
+          </div>
+          <div class="card-grid compact" id="snippet-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./site.js"></script>
+  </body>
+</html>
