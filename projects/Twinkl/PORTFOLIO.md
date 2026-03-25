@@ -1,4 +1,4 @@
-# Twinkl
+# Health App Initiative
 
 ## What Problem It Solves
 
@@ -6,11 +6,11 @@ Most alarms optimize for time, not for biology. Waking someone during the wrong 
 
 ## Why This Project Matters
 
-Twinkl shows product thinking in a constrained, high-stakes environment: limited APIs, time-sensitive workflows, wearable integrations, and the need for safe fallbacks. Even at the PRD and architecture stage, it demonstrates serious systems thinking.
+This initiative shows product thinking in a constrained, high-stakes environment: limited APIs, time-sensitive workflows, wearable integrations, and the need for safe fallbacks. Even at the PRD and architecture stage, it demonstrates serious systems thinking.
 
 ## Product Direction
 
-Twinkl is a sleep and wake optimization concept that uses wearable health data to trigger alarms during a more favorable wake window.
+This is a sleep and wake optimization mobile app concept that uses wearable health data to trigger actions during a more favorable biometric window.
 
 - The user connects a health tracker such as Fitbit.
 - The system collects heart-rate-based sleep signals during the wake window.

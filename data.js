@@ -1,23 +1,23 @@
 export const projects = [
   {
     slug: "twinkl",
-    name: "Twinkl",
-    status: "In progress",
-    domain: "Health Tech",
+    name: "Health App",
+    status: "Working prototype",
+    domain: "Mobile App / Health Tech",
     summary:
-      "Sleep and wake optimization initiative focused on wearable-driven biometrics, real-time classification, better wake timing, and a future Python-based agentic AI chat layer.",
-    stack: ["React", "Python", "Agentic AI Chat", "Supabase", "Fitbit API", "Apple Health"],
+      "Mobile app focused on a biometric decisioning workflow, RAG, Python-based agentic chat direction, and end-to-end health system architecture.",
+    stack: ["React", "Python", "RAG", "Agentic AI Chat", "Supabase", "Fitbit API", "Apple Health"],
     markdown: "./projects/Twinkl/PORTFOLIO.md",
     repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
   },
   {
     slug: "cashmeai",
-    name: "CashMeAI",
+    name: "Finance App",
     status: "Working prototype",
-    domain: "AI Finance",
+    domain: "Mobile App / AI Finance",
     summary:
-      "Personal finance assistant that connects to real accounts through Plaid and uses a LangGraph-based backend for conversational financial insight.",
-    stack: ["Python", "Flask", "LangGraph", "LangChain", "Vertex AI", "Plaid", "Supabase"],
+      "Mobile finance app built around Agentic AI Chat, end-to-end account workflows, conversational intelligence, and a LangGraph-based backend.",
+    stack: ["Python", "Flask", "Agentic AI Chat", "LangGraph", "LangChain", "Vertex AI", "Plaid", "Supabase"],
     markdown: "./projects/Cashmeai/PORTFOLIO.md",
     repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
   },
@@ -45,11 +45,11 @@ export const projects = [
   },
   {
     slug: "shopsmart-ai",
-    name: "ShopSmart AI",
+    name: "Commerce App",
     status: "In progress",
-    domain: "AI Commerce",
+    domain: "Mobile App / AI Commerce",
     summary:
-      "Merged commerce initiative covering both personalized product discovery exploration and the implemented multi-platform shopping assistant architecture, including a Python-based multi-agent backend.",
+      "Mobile commerce app covering end-to-end discovery, ranking, and execution workflows, including a Python-based multi-agent backend.",
     stack: ["React", "Python", "Multi-agent Backend", "Supabase Edge Functions", "OpenAI", "Playwright"],
     markdown: "./projects/ShopSmartAI/PORTFOLIO.md",
     repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"

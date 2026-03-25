@@ -1,4 +1,4 @@
-# CashMeAI
+# Finance App Initiative
 
 ## What Problem It Solves
 
@@ -10,7 +10,7 @@ This project sits at the intersection of fintech, conversational AI, and statefu
 
 ## Product Direction
 
-CashMeAI is an AI-powered financial assistant that connects to real financial accounts through Plaid and helps users interact with their money through chat instead of account-by-account navigation.
+This is an AI-powered finance app initiative that connects to real financial accounts through Plaid and helps users interact with their money through chat instead of account-by-account navigation.
 
 - Users connect checking, savings, credit card, and loan accounts.
 - The product pulls balances and transaction history through Plaid.

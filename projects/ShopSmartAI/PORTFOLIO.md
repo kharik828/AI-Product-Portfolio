@@ -1,4 +1,4 @@
-# ShopSmart AI
+# Commerce App Initiative
 
 ## What Problem It Solves
 
@@ -6,11 +6,11 @@ Cross-retailer shopping is fragmented. Users search each site separately, compar
 
 ## Why This Project Matters
 
-ShopSmart AI is one of the strongest demonstrations in this portfolio because it connects real user experience design with a fairly complex AI pipeline. It now represents the merged commerce initiative in this portfolio, combining the earlier personalized product discovery exploration with the more implemented multi-platform shopping assistant architecture. It shows full-stack execution, product architecture, retrieval strategy, extraction, ranking, and deployment tradeoffs.
+This is one of the strongest demonstrations in this portfolio because it connects real user experience design with a fairly complex AI pipeline. It now represents the merged commerce initiative in this portfolio, combining earlier product-discovery exploration with a more implemented multi-platform shopping assistant architecture. It shows full-stack execution, product architecture, retrieval strategy, extraction, ranking, and deployment tradeoffs.
 
 ## Product Direction
 
-ShopSmart AI is a multi-platform shopping assistant that turns natural language into structured shopping intent and returns ranked products from multiple retailers. The initiative also includes a Python-based multi-agent backend path for deeper orchestration and shopping intelligence.
+This is a multi-platform commerce app initiative that turns natural language into structured shopping intent and returns ranked products from multiple retailers. The initiative also includes a Python-based multi-agent backend path for deeper orchestration and shopping intelligence.
 
 - The user enters a natural-language request.
 - The system interprets the request into structured search intent.

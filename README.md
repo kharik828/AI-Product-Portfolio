@@ -26,26 +26,26 @@ The result is a portfolio that combines product thinking, software engineering, 
 - health-tech and real-time biometric decisioning
 - classical data science and geospatial analytics
 
-## Initiative Status
+## Product Status
 
-| Initiative | Status | Notes |
+| Product | Status | Notes |
 |---|---|---|
-| [Twinkl](./projects/Twinkl/PORTFOLIO.md) | In progress | Health-tech initiative around sleep-stage-aware wake timing and future Python agentic chat |
-| [CashMeAI](./projects/Cashmeai/PORTFOLIO.md) | Working prototype | Finance assistant with Plaid and LangGraph-backed conversations |
+| [Health App](./projects/Twinkl/PORTFOLIO.md) | Working prototype | Mobile app around biometric decisioning, RAG, and future Python agentic chat |
+| [Finance App](./projects/Cashmeai/PORTFOLIO.md) | Working prototype | Mobile finance app with Agentic AI Chat, LangGraph-backed conversations, and account workflows |
 | [USA Employer Sponsorship History](./projects/Employer-sponsorship-history/PORTFOLIO.md) | Completed | Chrome extension and retrieval workflow for sponsorship insights |
 | [Image Classification and Grading](./projects/GenAI%20CNN%20Image%20Classification%20and%20Grading/PORTFOLIO.md) | Completed | Comparative multimodal AI vs CNN solution study |
-| [ShopSmart AI](./projects/ShopSmartAI/PORTFOLIO.md) | In progress | Merged commerce initiative combining product discovery, shopping assistant work, and a Python multi-agent backend |
+| [Commerce App](./projects/ShopSmartAI/PORTFOLIO.md) | In progress | Mobile commerce app with discovery, ranking, and a Python multi-agent backend |
 | [Popularity Ranking](./projects/Popularity%20Ranking/PORTFOLIO.md) | Completed | Data science ranking model for city comparison |
 
 ## Projects
 
-### [Twinkl](./projects/Twinkl/PORTFOLIO.md)
+### [Health App](./projects/Twinkl/PORTFOLIO.md)
 
-Health-tech initiative focused on wearable-driven sleep intelligence, wake optimization, real-time biometric decisioning, and a future Python-based agentic AI chat layer.
+Mobile app focused on wearable-driven decisioning, real-time biometric workflows, RAG, and a future Python-based agentic AI chat layer.
 
-### [CashMeAI](./projects/Cashmeai/PORTFOLIO.md)
+### [Finance App](./projects/Cashmeai/PORTFOLIO.md)
 
-AI-powered personal finance assistant that connects to real financial accounts through Plaid and uses a LangGraph-based backend to answer questions about balances, transactions, and financial context.
+Mobile finance app that connects to financial accounts and uses Agentic AI Chat plus a LangGraph-based backend to support end-to-end account workflows and conversational insight.
 
 ### [USA Employer Sponsorship History](./projects/Employer-sponsorship-history/PORTFOLIO.md)
 
@@ -55,9 +55,9 @@ Chrome extension and backend workflow that help job seekers understand employer 
 
 Comparative AI project showing when multimodal LLMs can outperform traditional CNN-heavy pipelines for business-facing image classification and grading problems.
 
-### [ShopSmart AI](./projects/ShopSmartAI/PORTFOLIO.md)
+### [Commerce App](./projects/ShopSmartAI/PORTFOLIO.md)
 
-Merged commerce initiative covering both personalized product discovery exploration and the implemented multi-platform shopping assistant architecture, including a Python-based multi-agent backend.
+Mobile commerce app covering discovery, ranking, and execution workflows, including a Python-based multi-agent backend.
 
 ### [Popularity Ranking](./projects/Popularity%20Ranking/PORTFOLIO.md)
 
