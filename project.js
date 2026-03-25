@@ -102,7 +102,7 @@ async function loadProject() {
   `;
 
   try {
-    const response = await fetch(project.markdown);
+    const response = await fetch(encodeURI(project.markdown));
     const markdown = await response.text();
     markdownRoot.innerHTML = renderMarkdown(markdown);
   } catch (error) {

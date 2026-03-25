@@ -1,35 +1,91 @@
 export const projects = [
   {
-    slug: "usa-employer-sponsorship-history",
-    name: "USA Employer Sponsorship History",
-    status: "Working prototype",
+    slug: "twinkl",
+    name: "Twinkl",
+    status: "In progress",
+    domain: "Health Tech",
     summary:
-      "Chrome extension and backend service that extract employer context from LinkedIn Jobs and summarize H-1B sponsorship patterns from public sources.",
-    stack: ["Chrome Extension", "Node.js", "Playwright", "MCP", "RAG", "Embeddings"],
-    markdown: "./projects/usa-employer-sponsorship-history/README.md",
+      "Sleep and wake optimization initiative focused on wearable-driven biometrics, real-time classification, better wake timing, and a future Python-based agentic AI chat layer.",
+    stack: ["React", "Python", "Agentic AI Chat", "Supabase", "Fitbit API", "Apple Health"],
+    markdown: "./projects/Twinkl/PORTFOLIO.md",
     repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
   },
   {
-    slug: "most-personalized-shopper-ai-product-discovery",
-    name: "Most Personalized Shopper AI - Product Discovery",
-    status: "In progress",
+    slug: "cashmeai",
+    name: "CashMeAI",
+    status: "Working prototype",
+    domain: "AI Finance",
     summary:
-      "Multi-retailer shopping assistant focused on intent understanding, product retrieval, ranking, and personalized recommendation flows.",
-    stack: ["React", "TypeScript", "Supabase", "Lovable", "OpenAI", "Multi-agent workflow"],
-    markdown: "./projects/most-personalized-shopper-ai-product-discovery/README.md",
+      "Personal finance assistant that connects to real accounts through Plaid and uses a LangGraph-based backend for conversational financial insight.",
+    stack: ["Python", "Flask", "LangGraph", "LangChain", "Vertex AI", "Plaid", "Supabase"],
+    markdown: "./projects/Cashmeai/PORTFOLIO.md",
+    repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
+  },
+  {
+    slug: "usa-employer-sponsorship-history",
+    name: "USA Employer Sponsorship History",
+    status: "Completed",
+    domain: "Career Intelligence",
+    summary:
+      "Chrome extension and backend workflow that summarize employer H-1B sponsorship signals directly from LinkedIn Jobs pages.",
+    stack: ["Chrome Extension", "Node.js", "Playwright", "MCP", "RAG", "Embeddings"],
+    markdown: "./projects/Employer-sponsorship-history/PORTFOLIO.md",
+    repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
+  },
+  {
+    slug: "image-classification-and-grading",
+    name: "Image Classification and Grading",
+    status: "Completed",
+    domain: "Multimodal AI",
+    summary:
+      "Comparison of traditional CNN pipelines and multimodal LLM workflows for business-oriented image classification and grading tasks.",
+    stack: ["Python", "AWS Lambda", "SageMaker", "S3", "TensorFlow", "Gemini"],
+    markdown: "./projects/GenAI CNN Image Classification and Grading/PORTFOLIO.md",
+    repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
+  },
+  {
+    slug: "shopsmart-ai",
+    name: "ShopSmart AI",
+    status: "In progress",
+    domain: "AI Commerce",
+    summary:
+      "Merged commerce initiative covering both personalized product discovery exploration and the implemented multi-platform shopping assistant architecture, including a Python-based multi-agent backend.",
+    stack: ["React", "Python", "Multi-agent Backend", "Supabase Edge Functions", "OpenAI", "Playwright"],
+    markdown: "./projects/ShopSmartAI/PORTFOLIO.md",
+    repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
+  },
+  {
+    slug: "popularity-ranking",
+    name: "Popularity Ranking",
+    status: "Completed",
+    domain: "Data Science",
+    summary:
+      "City comparison model that uses venue accessibility, geospatial analysis, and clustering to support relocation-style decisions.",
+    stack: ["Python", "pandas", "Geopy", "Foursquare API", "Folium", "scikit-learn"],
+    markdown: "./projects/Popularity Ranking/PORTFOLIO.md",
     repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
   }
 ];
 
 export const snippets = [
   {
-    name: "Agentic Product Delivery",
-    summary: "A reusable workflow for splitting product development across human planning, UI agents, coding agents, and eval loops.",
-    path: "./snippets/agentic-product-delivery.md"
+    name: "Agentic Finance Assistant",
+    summary: "Stateful finance architecture combining chat orchestration, trusted tools, and real account context.",
+    path: "./snippets/agentic-finance-architecture.md"
   },
   {
-    name: "Human Evals First",
-    summary: "A simple rubric for evaluating early-stage AI products before building automated eval infrastructure.",
-    path: "./snippets/human-evals-first.md"
+    name: "Agentic Commerce Pipeline",
+    summary: "Shopping architecture that chains intent, retrieval, extraction, ranking, and explanation.",
+    path: "./snippets/agentic-commerce-architecture.md"
+  },
+  {
+    name: "Decision Support Extension",
+    summary: "Inline decision-support architecture built around contextual retrieval and summarization.",
+    path: "./snippets/agentic-decision-support-architecture.md"
+  },
+  {
+    name: "Health Decisioning System",
+    summary: "Biometric signal architecture for real-time decisioning with safe fallback behavior.",
+    path: "./snippets/agentic-health-architecture.md"
   }
 ];

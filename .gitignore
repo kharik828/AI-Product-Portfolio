@@ -8,8 +8,7 @@
 !site.js
 !project.js
 !projects/
-!projects/**/
-!projects/**/*.md
+!projects/*/
+!projects/*/PORTFOLIO.md
 !snippets/
-!snippets/**/
-!snippets/**/*.md
+!snippets/*.md

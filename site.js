@@ -9,7 +9,7 @@ function buildProjectCard(project) {
   return `
     <article class="card">
       <div class="card-top">
-        <p class="status">${project.status}</p>
+        <p class="status">${project.domain} · ${project.status}</p>
         <h3>${project.name}</h3>
         <p>${project.summary}</p>
       </div>
