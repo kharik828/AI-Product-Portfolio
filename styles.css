@@ -54,9 +54,7 @@ a {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1.6fr 1fr;
-  gap: 24px;
+  display: block;
   padding: 32px;
   border-radius: var(--radius-lg);
 }
@@ -71,8 +69,8 @@ a {
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4.6rem);
-  max-width: 12ch;
+  font-size: clamp(2.4rem, 4vw, 3.9rem);
+  max-width: 11ch;
 }
 
 .eyebrow,
@@ -140,21 +138,10 @@ a {
   background: transparent;
 }
 
-.hero-panel,
 .card,
 .workflow-card,
 .markdown-card {
   border-radius: var(--radius-md);
-}
-
-.hero-panel {
-  padding: 22px;
-  background: linear-gradient(180deg, rgba(255, 253, 248, 0.9), rgba(248, 244, 236, 0.85));
-}
-
-.signal-list {
-  margin: 0;
-  padding-left: 18px;
 }
 
 .section {

@@ -1,11 +1,8 @@
 # AI Product Portfolio
 
-Public-facing portfolio for the AI, agentic, and data products I am building outside work.
+My portfolio of AI, agentic, and data products focused on real-world problems, architecture, tooling, tradeoffs, and evaluation.
 
-This repository is meant to do two jobs at once:
-
-- help non-technical visitors understand the real problems I am solving
-- help technical visitors see the architecture, tooling, tradeoffs, and evaluation mindset behind the work
+This repository is meant to help product and technical folks quickly understand the real problems I am solving, along with the architecture, tooling, tradeoffs, and evaluation mindset behind the work.
 
 ## What This Portfolio Says About My Work
 
