@@ -20,9 +20,9 @@ This is a multi-platform commerce app initiative that turns natural language int
 
 ## How The Solution Works
 
-- React and TypeScript power the user-facing shopping experience.
+- React UI powers the user-facing shopping experience.
 - A Python-based multi-agent backend supports richer orchestration for discovery, retrieval, and ranking workflows.
-- Supabase Edge Functions run the serverless backend logic.
+- Flask API and Supabase Cloud support the application backend and state services.
 - GPT-4o is used for intent generation.
 - GPT-4o-mini is used for product extraction and relevance scoring.
 - Google Custom Search API is used to discover product pages.
@@ -36,23 +36,20 @@ This is a multi-platform commerce app initiative that turns natural language int
 - Scraping agent: fetches retailer content with layered fallback strategies.
 - Extraction agent: converts messy page content into structured product data.
 - Ranking layer: scores relevance and filters weak matches.
-- Orchestrator: coordinates the pipeline through serverless functions.
-- Python multi-agent backend: supports deeper workflow orchestration beyond the edge-function path.
+- MCP layer: connects agents to tools and controlled execution paths.
+- Python multi-agent backend: supports deeper workflow orchestration across shopping tasks.
 
 ## Technologies Used
 
-- React
+- React UI
 - Python
-- TypeScript
-- Vite
-- Tailwind CSS
-- shadcn/ui
-- Supabase Edge Functions
-- Deno
-- OpenAI APIs
+- Multi AI Agents
+- MCPs
+- Flask API
+- Supabase Cloud
 - Google Custom Search API
-- Cheerio
 - Playwright
+- OpenAI APIs
 
 ## Key Decisions And Tradeoffs
 

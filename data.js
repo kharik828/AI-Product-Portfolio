@@ -6,7 +6,7 @@ export const projects = [
     domain: "Mobile App / Health Tech",
     summary:
       "Mobile app focused on a biometric decisioning workflow, RAG, Python-based agentic chat direction, and end-to-end health system architecture.",
-    stack: ["React", "Python", "RAG", "Agentic AI Chat", "Supabase", "Fitbit API", "Apple Health"],
+    stack: ["React", "Python", "RAG", "Agentic AI Chat", "Supabase Cloud", "Fitbit API", "Apple Health"],
     markdown: "./projects/Twinkl/PORTFOLIO.md",
     repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
   },
@@ -16,8 +16,8 @@ export const projects = [
     status: "Working prototype",
     domain: "Mobile App / AI Finance",
     summary:
-      "Mobile finance app built around Agentic AI Chat, end-to-end account workflows, conversational intelligence, and a LangGraph-based backend.",
-    stack: ["Python", "Flask", "Agentic AI Chat", "LangGraph", "LangChain", "Vertex AI", "Plaid", "Supabase"],
+      "Mobile finance app built around Agentic AI Chat, RAG, end-to-end account workflows, and conversational intelligence across connected accounts.",
+    stack: ["Python", "Flask", "Agentic AI Chat", "RAG", "LangChain", "Vertex AI", "Plaid", "Supabase Cloud"],
     markdown: "./projects/Cashmeai/PORTFOLIO.md",
     repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
   },
@@ -50,7 +50,7 @@ export const projects = [
     domain: "Mobile App / AI Commerce",
     summary:
       "Mobile commerce app covering end-to-end discovery, ranking, and execution workflows, including a Python-based multi-agent backend.",
-    stack: ["React", "Python", "Multi-agent Backend", "Supabase Edge Functions", "OpenAI", "Playwright"],
+    stack: ["React UI", "Python", "Multi AI Agents", "MCPs", "Flask API", "Supabase Cloud", "Playwright"],
     markdown: "./projects/ShopSmartAI/PORTFOLIO.md",
     repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
   },

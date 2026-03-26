@@ -45,6 +45,7 @@ a {
 .hero,
 .detail-header,
 .card,
+.flow-card,
 .workflow-card,
 .markdown-card {
   backdrop-filter: blur(12px);
@@ -139,6 +140,7 @@ a {
 }
 
 .card,
+.flow-card,
 .workflow-card,
 .markdown-card {
   border-radius: var(--radius-md);
@@ -202,6 +204,45 @@ a {
   gap: 18px;
 }
 
+.flow-card {
+  padding: 22px;
+  margin-top: 0;
+}
+
+.hero-flow-card {
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.flow-chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.flow-node {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--paper-strong);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.flow-link {
+  color: var(--warm);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.flow-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+}
+
 .compact {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -209,6 +250,10 @@ a {
 .card,
 .workflow-card {
   padding: 22px;
+}
+
+.workflow-card {
+  min-height: 100%;
 }
 
 .card h3,
@@ -239,10 +284,22 @@ a {
 }
 
 .split-section {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
+  display: flex;
+  flex-direction: column;
   gap: 18px;
-  align-items: start;
+  align-items: stretch;
+}
+
+.split-section > div:first-child {
+  order: 1;
+}
+
+.split-section > .workflow-grid {
+  order: 2;
+}
+
+.split-section > .flow-card {
+  order: 3;
 }
 
 .detail-shell {

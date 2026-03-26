@@ -30,11 +30,11 @@ The result is a portfolio that combines product thinking, software engineering, 
 
 | Product | Status | Notes |
 |---|---|---|
-| [Health App](./projects/Twinkl/PORTFOLIO.md) | Working prototype | Mobile app around biometric decisioning, RAG, and future Python agentic chat |
-| [Finance App](./projects/Cashmeai/PORTFOLIO.md) | Working prototype | Mobile finance app with Agentic AI Chat, LangGraph-backed conversations, and account workflows |
+| [Health App](./projects/Twinkl/PORTFOLIO.md) | Working prototype | Wake-timing app using biometrics, RAG, and future agentic coaching |
+| [Finance App](./projects/Cashmeai/PORTFOLIO.md) | Working prototype | Finance app using Agentic AI Chat and RAG across connected account workflows |
 | [USA Employer Sponsorship History](./projects/Employer-sponsorship-history/PORTFOLIO.md) | Completed | Chrome extension and retrieval workflow for sponsorship insights |
 | [Image Classification and Grading](./projects/GenAI%20CNN%20Image%20Classification%20and%20Grading/PORTFOLIO.md) | Completed | Comparative multimodal AI vs CNN solution study |
-| [Commerce App](./projects/ShopSmartAI/PORTFOLIO.md) | In progress | Mobile commerce app with discovery, ranking, and a Python multi-agent backend |
+| [Commerce App](./projects/ShopSmartAI/PORTFOLIO.md) | In progress | Commerce app turning shopping intent into ranked cross-retailer options through AI agents |
 | [Popularity Ranking](./projects/Popularity%20Ranking/PORTFOLIO.md) | Completed | Data science ranking model for city comparison |
 
 ## Projects
@@ -45,7 +45,7 @@ Mobile app focused on wearable-driven decisioning, real-time biometric workflows
 
 ### [Finance App](./projects/Cashmeai/PORTFOLIO.md)
 
-Mobile finance app that connects to financial accounts and uses Agentic AI Chat plus a LangGraph-based backend to support end-to-end account workflows and conversational insight.
+Mobile finance app that connects to financial accounts and uses Agentic AI Chat plus RAG to support end-to-end account workflows and conversational insight.
 
 ### [USA Employer Sponsorship History](./projects/Employer-sponsorship-history/PORTFOLIO.md)
 
@@ -67,7 +67,7 @@ Data science project using venue accessibility and clustering to compare urban n
 
 - React, TypeScript, Vite, Tailwind, shadcn/ui
 - Python, Flask, Jupyter, pandas, scikit-learn
-- Supabase, PostgreSQL, Edge Functions
+- Supabase Cloud, PostgreSQL, Edge Functions
 - OpenAI, Google Vertex AI, Gemini, LangChain, LangGraph
 - Plaid, Fitbit API, Google Custom Search API, Foursquare API
 - Playwright, Cheerio, browser automation, Chrome Extensions

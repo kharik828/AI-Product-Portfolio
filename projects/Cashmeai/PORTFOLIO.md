@@ -21,8 +21,8 @@ This is an AI-powered finance app initiative that connects to real financial acc
 
 - Frontend handles account connection, authentication, dashboard views, and chat entry points.
 - Plaid integration provides secure account aggregation.
-- Supabase provides auth, storage, and supporting data services.
-- A Python backend uses LangGraph and LangChain to manage multi-turn financial conversations.
+- Supabase Cloud provides auth, storage, and supporting data services.
+- A Python backend uses RAG and LangChain to manage multi-turn financial conversations with account context.
 - Vertex AI powers the language layer for financial understanding and response generation.
 
 ## AI And Agentic Architecture
@@ -33,24 +33,25 @@ This project is a strong example of agentic system design in a high-context doma
 - Tool-calling layer: invokes account balance and transaction tools dynamically.
 - State manager: preserves conversation history and workflow state across sessions.
 - Data access layer: retrieves financial data safely without exposing sensitive tokens to the frontend.
+- Retrieval layer: grounds responses in connected-account data and retrieved financial context.
 - Human design layer: keeps the product aligned with user trust, security, and clarity expectations.
 
 ## Technologies Used
 
 - Python
 - Flask
-- LangGraph
+- RAG
 - LangChain
 - Google Vertex AI
 - Plaid
-- Supabase
+- Supabase Cloud
 - React and TypeScript on the frontend
 
 ## Key Decisions And Tradeoffs
 
-- LangGraph instead of a stateless chat wrapper: better for multi-turn experiences, but more complex to manage.
+- RAG instead of a generic chat-only layer: better for grounded responses, but requires careful retrieval quality.
 - Plaid for account aggregation: accelerates integration, but adds operational and trust requirements.
-- Supabase plus custom backend: good separation of concerns, but requires careful coordination across services.
+- Supabase Cloud plus custom backend: good separation of concerns, but requires careful coordination across services.
 - Finance chat as the interface: easier for users, but correctness and trust matter more than novelty.
 
 ## Outcomes And Learnings

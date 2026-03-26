@@ -38,7 +38,7 @@ This is a sleep and wake optimization mobile app concept that uses wearable heal
 
 - React and TypeScript direction
 - Python for future agentic AI chat
-- Supabase-style backend architecture
+- Supabase Cloud backend architecture
 - Fitbit API
 - Apple Health integration path
 - Push notification infrastructure
