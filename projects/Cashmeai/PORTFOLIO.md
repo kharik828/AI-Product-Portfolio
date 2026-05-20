@@ -1,76 +1,78 @@
-# Finance App Initiative
+# Finance App — Pre-Pilot
 
 ## What Problem It Solves
 
-Personal finance is fragmented. Most people have to jump across bank apps, credit card portals, and loan dashboards just to answer simple questions about balances, transactions, and spending. CashMeAI is designed to turn that fragmented experience into a single conversational interface.
+Personal finance is fragmented. Most people jump across multiple bank apps, credit card portals, and dashboards just to answer basic questions about where their money stands. Tools surface data but rarely help users act on it. This app is built to change that — one conversational workspace that connects to real financial accounts, understands the full picture, and helps users get answers and take action without app-switching.
 
-## Why This Project Matters
+## Why Pre-Pilot
 
-This project sits at the intersection of fintech, conversational AI, and stateful agent design. It shows that I can work on high-trust product areas where integration, security, and user context matter as much as interface design.
+The app has moved from working prototype to pre-pilot. The core architecture — financial account integration, agentic AI chat with tool-calling, RAG-based context retrieval, and stateful conversations — is operational. The current focus is validating with real users, tightening response accuracy, and hardening the trust model.
 
 ## Product Direction
 
-This is an AI-powered finance app initiative that connects to real financial accounts through Plaid and helps users interact with their money through chat instead of account-by-account navigation.
-
-- Users connect checking, savings, credit card, and loan accounts.
-- The product pulls balances and transaction history through Plaid.
-- A conversational agent answers questions using the user's actual financial context.
-- Conversation history and state persist over time, making the assistant more useful than a one-shot chatbot.
+- Users connect their financial accounts through a secure bank-grade integration layer.
+- A conversational AI agent answers questions using real account context — balances, transactions, spend patterns.
+- The agent invokes financial tools dynamically (balance lookup, transaction search, spend categorization) rather than just generating responses.
+- Conversation history persists across sessions, making the assistant progressively more useful over time.
+- Proactive behavior is designed into the architecture but gated for pilot validation.
 
 ## How The Solution Works
 
-- Frontend handles account connection, authentication, dashboard views, and chat entry points.
-- Plaid integration provides secure account aggregation.
-- Supabase Cloud provides auth, storage, and supporting data services.
-- A Python backend uses RAG and LangChain to manage multi-turn financial conversations with account context.
-- Vertex AI powers the language layer for financial understanding and response generation.
+- React and TypeScript frontend handles auth, account connection, dashboard views, and chat.
+- A secure account aggregation layer connects to financial institutions.
+- Supabase Cloud manages auth, persistent conversation state, and supporting data services.
+- Python backend (Flask) orchestrates the agentic layer using Claude API.
+- RAG grounds responses in connected-account data rather than general financial knowledge.
+- MCP integrations allow Claude Code to inspect live database state, run evaluations against real data, and deploy backend changes directly from the development environment.
 
-## AI And Agentic Architecture
+## AI and Agentic Architecture
 
-This project is a strong example of agentic system design in a high-context domain.
-
-- Conversation agent: handles user chat and decides what financial context is needed.
-- Tool-calling layer: invokes account balance and transaction tools dynamically.
-- State manager: preserves conversation history and workflow state across sessions.
-- Data access layer: retrieves financial data safely without exposing sensitive tokens to the frontend.
-- Retrieval layer: grounds responses in connected-account data and retrieved financial context.
-- Human design layer: keeps the product aligned with user trust, security, and clarity expectations.
+- Conversation agent routes user intent to the right financial tools and decides what context is needed.
+- Tool-calling layer invokes balance, transaction, and categorization functions dynamically.
+- State manager preserves multi-turn conversation history and session context across interactions.
+- Retrieval layer grounds responses in real account data — not hallucinated generalities.
+- Evaluation layer uses agent-driven queries to test correctness and response quality before changes are deployed.
+- Human trust layer keeps product decisions aligned with security, correctness, and user clarity expectations.
 
 ## Technologies Used
 
-- Python
-- Flask
-- RAG
-- LangChain
-- Google Vertex AI
-- Plaid
-- Supabase Cloud
-- React and TypeScript on the frontend
+- Python, Flask (backend API and agent orchestration)
+- Claude API (conversational agent and tool-calling)
+- RAG (retrieval-augmented generation for account-grounded responses)
+- Secure financial account aggregation
+- Supabase Cloud (auth, data, persistent conversation state)
+- React, TypeScript (frontend)
+- MCP Integrations (database and deployment infrastructure)
+- Claude Code and OpenAI Codex (AI engineering and implementation layer)
 
-## Key Decisions And Tradeoffs
+## AI Stack Evolution
 
-- RAG instead of a generic chat-only layer: better for grounded responses, but requires careful retrieval quality.
-- Plaid for account aggregation: accelerates integration, but adds operational and trust requirements.
-- Supabase Cloud plus custom backend: good separation of concerns, but requires careful coordination across services.
-- Finance chat as the interface: easier for users, but correctness and trust matter more than novelty.
+This project reflects a shift in how I work as an AI engineer. The development environment is now a connected system rather than isolated tools:
 
-## Outcomes And Learnings
+- **Lovable** generates UI scaffolding and first-pass interfaces synced with the GitHub repo.
+- **GitHub and Supabase Cloud** stay connected throughout development — repo state and database schema evolve together.
+- **VS Code with Claude Code and Codex** drives backend implementation, refactoring, and agentic logic.
+- **MCP integrations** connect Claude Code directly to the database and deployment infrastructure — agents can query live data, evaluate response quality, and trigger deployments without leaving the development loop.
 
-- Finance products need strong workflow design, not just model capability.
-- Stateful agents are much more compelling than stateless chat for real user tasks.
-- Security boundaries and token handling become part of the product architecture, not just infrastructure details.
-- This project demonstrates comfort with applied AI in a high-sensitivity environment.
+This compression of the build-eval-deploy cycle is one of the most significant changes from how this project started.
+
+## Key Decisions and Tradeoffs
+
+- Bank-grade account aggregation: accelerates institution coverage, but adds operational and trust requirements that shaped the UX.
+- RAG over generic chat: better factual grounding tied to real account data, but requires careful retrieval quality and chunking design.
+- Stateful sessions: far more compelling than stateless chat for real financial tasks, but requires robust state management.
+- Agent-driven evals via MCP: allows evaluation of live system behavior before deployment rather than relying solely on offline test suites.
 
 ## Evals
 
-The right evals here begin with trust and usefulness.
+The right evals for a finance product begin with trust and correctness — not just model capability.
 
-- Can the agent answer balance and transaction questions correctly
-- Does it call the right tool at the right time
-- Does conversation state persist in a useful way
-- Are responses understandable for non-technical users
-- What safeguards are needed before expanding to advice-like behavior
+- Does the agent answer balance and transaction questions accurately against real account data?
+- Does it invoke the right tool at the right time without hallucinating account details?
+- Does conversation state persist in a way that feels coherent across sessions?
+- Are responses clear and appropriately hedged for non-technical users?
+- What safeguards need to be in place before expanding toward advice-adjacent behavior?
 
 ## Status
 
-Working prototype with a real architectural backbone. The most important next steps are broader financial tools, stronger response quality controls, and more explicit evaluation for correctness and trust.
+Pre-pilot. Core product is operational against real accounts. Actively validating with users, tightening the eval suite, and refining the agentic response layer.

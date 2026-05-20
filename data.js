@@ -1,5 +1,16 @@
 export const projects = [
   {
+    slug: "cashmeai",
+    name: "Finance App",
+    status: "Pre-pilot",
+    domain: "Mobile App / AI Finance",
+    summary:
+      "AI finance companion entering pre-pilot — connects real financial accounts, uses agentic AI chat with RAG and tool-calling so users can get answers and act from one financial workspace.",
+    stack: ["Python", "Flask", "Claude API", "Agentic AI Chat", "RAG", "Supabase Cloud", "Claude Code", "Codex", "MCP Integrations"],
+    markdown: "./projects/Cashmeai/PORTFOLIO.md",
+    repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
+  },
+  {
     slug: "twinkl",
     name: "Health App",
     status: "Working prototype",
@@ -8,17 +19,6 @@ export const projects = [
       "Mobile app focused on a biometric decisioning workflow, RAG, Python-based agentic chat direction, and end-to-end health system architecture.",
     stack: ["React", "Python", "RAG", "Agentic AI Chat", "Supabase Cloud", "Fitbit API", "Apple Health"],
     markdown: "./projects/Twinkl/PORTFOLIO.md",
-    repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
-  },
-  {
-    slug: "cashmeai",
-    name: "Finance App",
-    status: "Working prototype",
-    domain: "Mobile App / AI Finance",
-    summary:
-      "Mobile finance app built around Agentic AI Chat, RAG, end-to-end account workflows, and conversational intelligence across connected accounts.",
-    stack: ["Python", "Flask", "Agentic AI Chat", "RAG", "LangChain", "Vertex AI", "Plaid", "Supabase Cloud"],
-    markdown: "./projects/Cashmeai/PORTFOLIO.md",
     repoUrl: "https://github.com/kharik828/AI-Product-Portfolio"
   },
   {
